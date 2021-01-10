@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/hbarza/learn-reactjs/issues"
   },
-  "homepage": "https://github.com/hbarza/learn-reactjs#readme"
+  "homepage": "https://github.com/hbarza/learn-reactjs#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
 }
