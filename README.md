@@ -1,5 +1,7 @@
 # learn-reactjs
-Learning ES6 and ReactJS resources, practices, codes etc. 
+Learning ES6 and ReactJS resources, practices, codes etc.
+
+https://reactjs.org/docs/getting-started.html
 
 ## Resources:
 
@@ -30,8 +32,21 @@ Learning ES6 and ReactJS resources, practices, codes etc.
 
 [Step-by-Step](https://reactjs.org/docs/hello-world.html)
 
-#### React "useState"
-[Hooks](https://reactjs.org/docs/hooks-reference.html)
+#### React Advanced
+[Context](https://reactjs.org/docs/context.html)
+
+[Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+
+[Hooks *- useState*](https://reactjs.org/docs/hooks-reference.html)
+
+### React for Beginners
+[An Overview and Walkthrough](https://www.taniarascia.com/getting-started-with-react/)
+
+### React Community Courses
+[Courses *(reactjs.org)*](https://reactjs.org/community/courses.html)
+
+### Glossary
+[Glossary of React Terms](https://reactjs.org/docs/glossary.html)
 
 ### Youtube
 [Learn React In 30 Minutes](https://www.youtube.com/watch?v=hQAHSlTtcmY)
