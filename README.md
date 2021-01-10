@@ -48,6 +48,9 @@ https://reactjs.org/docs/getting-started.html
 ### Glossary
 [Glossary of React Terms](https://reactjs.org/docs/glossary.html)
 
+### JSX
+[JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
+
 ### Youtube
 [Learn React In 30 Minutes](https://www.youtube.com/watch?v=hQAHSlTtcmY)
 
