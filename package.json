@@ -1,0 +1,20 @@
+{
+  "name": "learn-reactjs",
+  "version": "1.0.0",
+  "description": "Learning ES6 and ReactJS resources, practices, codes etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbarza/learn-reactjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbarza/learn-reactjs/issues"
+  },
+  "homepage": "https://github.com/hbarza/learn-reactjs#readme"
+}
