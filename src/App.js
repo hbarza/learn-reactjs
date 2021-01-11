@@ -1,9 +1,16 @@
+import Welcome from './App/Welcome';
 import logo from './logo.svg';
 import './App.css';
+
+const user = {
+  name: 'Omid',
+  family: 'Barza'
+};
 
 function App() {
   return (
     <div className="App">
+      <Welcome user={user}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
