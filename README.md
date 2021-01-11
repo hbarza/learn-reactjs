@@ -52,8 +52,9 @@ https://reactjs.org/docs/getting-started.html
 [JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
 
 ### Youtube
+
+[React: Rethinking best practices](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
+
 [Learn React In 30 Minutes](https://www.youtube.com/watch?v=hQAHSlTtcmY)
 
 [Array/Object Destructuring](https://www.youtube.com/watch?v=NIq3qLaHCIs)
-
-
