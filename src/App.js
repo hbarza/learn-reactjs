@@ -1,4 +1,5 @@
 import Welcome from './App/Welcome';
+import './App/Clock';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Welcome user={user}/>
+      <div id="clock"></div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
