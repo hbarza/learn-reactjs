@@ -1,34 +1,43 @@
+import React from 'react';
 import Welcome from './App/Welcome';
-import './App/Clock';
 import logo from './logo.svg';
+import './App/Clock';
 import './App.css';
 
-const user = {
-  name: 'Omid',
-  family: 'Barza'
-};
+class App extends React.Component
+{
+  constructor(props)
+  {
+    super(props);
+    this.user = {
+      name: 'Hassan',
+      family: 'Barza'
+    }
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <Welcome user={user}/>
-      <div id="clock"></div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render()
+  {
+    return (
+      <div className="App">
+        <Welcome user={this.user}/>
+        <div id="clock"></div>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
