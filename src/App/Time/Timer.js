@@ -38,6 +38,13 @@ class Timer extends React.Component
     this.stop();
   }
 
+  tick()
+  {
+    this.setState({
+      date: this.getDate()
+    });
+  }
+
   toggleTimer()
   {
     this.state.timer ? this.stop() : this.start();
@@ -45,11 +52,9 @@ class Timer extends React.Component
 
   start()
   {
-    this.setState({date: this.getDate()});
+    this.tick();
 
-    let timer = setInterval(() => this.setState({
-      date: this.getDate()
-    }), 1000);
+    let timer = setInterval(() => this.tick(), 1000);
 
     this.setState({timer: timer});
   }
