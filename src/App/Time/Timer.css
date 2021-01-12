@@ -1,3 +1,7 @@
 #timer {
     color: palevioletred;
 }
+.timer_btn {
+    padding: 5px 20px;
+    font-size: 1.25rem;
+}

@@ -7,7 +7,11 @@ class Timer extends React.Component
   {
     super(props);
 
-    this.state = {date: new Date()};
+    this.state = {
+      date: this.getDate(),
+      timer: false
+    };
+
     this.start = this.start.bind(this);
     this.stop  = this.stop.bind(this);
   }
@@ -15,7 +19,12 @@ class Timer extends React.Component
   render()
   {
     return (
-      <h3>{this.state.date.toLocaleTimeString()}</h3>
+      <div>
+        <h3>{this.state.date.toLocaleTimeString()}</h3>
+        <button type="button" className="timer_btn" onClick={this.toggleTimer.bind(this)}>
+          {this.state.timer ? 'Stop' : 'Start'}
+        </button>
+      </div>
     );
   }
 
@@ -29,16 +38,32 @@ class Timer extends React.Component
     this.stop();
   }
 
+  toggleTimer()
+  {
+    this.state.timer ? this.stop() : this.start();
+  }
+
   start()
   {
-    this.timer = setInterval(() => this.setState({
-      date: new Date()
+    this.setState({date: this.getDate()});
+
+    let timer = setInterval(() => this.setState({
+      date: this.getDate()
     }), 1000);
+
+    this.setState({timer: timer});
   }
 
   stop()
   {
-    clearInterval(this.timer);
+    clearInterval(this.state.timer);
+
+    this.setState({timer: false});
+  }
+
+  getDate(format)
+  {
+    return new Date();
   }
 }
 
