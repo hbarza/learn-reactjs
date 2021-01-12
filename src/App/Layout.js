@@ -1,8 +1,8 @@
 import React from 'react';
 import User from './User';
+import Clock from './Time/Clock';
 import Logo from './Layout/Logo';
 import Content from './Layout/Content';
-import './Clock';
 
 class Layout extends React.Component
 {
@@ -10,9 +10,9 @@ class Layout extends React.Component
     {
         return (
             <div className="one-page">
-                <User />
-                <div id="clock"></div>
                 <header className="App-header">
+                    <User />
+                    <Clock />
                     <Logo />
                     <Content />
                 </header>
