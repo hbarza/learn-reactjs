@@ -130,12 +130,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 [Regural Expressions *- regex*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
+[JavaScript Bind](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
+
 ### Offical React
 [Getting Started](https://reactjs.org/docs/getting-started.html)
 
 [Practical Tutorial ](https://reactjs.org/tutorial/tutorial.html)
 
 [Step-by-Step](https://reactjs.org/docs/hello-world.html)
+
+#### Main Concepts
+[State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
+[State Important Nots](https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly)
+
+[State and Lifecycle API](https://reactjs.org/docs/react-component.html)
 
 #### React Advanced
 [Context](https://reactjs.org/docs/context.html)
@@ -163,12 +172,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [Learn React In 30 Minutes](https://www.youtube.com/watch?v=hQAHSlTtcmY)
 
 [Array/Object Destructuring](https://www.youtube.com/watch?v=NIq3qLaHCIs)
-
-#### Main Concepts
-[State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
-
-[State Important Nots](https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly)
-
-[State and Lifecycle API](https://reactjs.org/docs/react-component.html)
-
-[JavaScript Bind](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
