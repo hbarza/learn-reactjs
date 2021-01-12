@@ -66,7 +66,7 @@ class Timer extends React.Component
     this.setState({timer: false});
   }
 
-  getDate(format)
+  getDate()
   {
     return new Date();
   }
