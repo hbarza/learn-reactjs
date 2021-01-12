@@ -6,7 +6,10 @@ class Timer extends React.Component
   constructor(props)
   {
     super(props);
+
     this.state = {date: new Date()};
+    this.start = this.start.bind(this);
+    this.stop  = this.stop.bind(this);
   }
 
   render()
@@ -18,12 +21,22 @@ class Timer extends React.Component
 
   componentDidMount()
   {
+    this.start();
+  }
+
+  componentWillUnmount()
+  {
+    this.stop();
+  }
+
+  start()
+  {
     this.timer = setInterval(() => this.setState({
       date: new Date()
     }), 1000);
   }
 
-  componentWillUnmount()
+  stop()
   {
     clearInterval(this.timer);
   }

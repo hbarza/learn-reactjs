@@ -11,12 +11,6 @@ class Clock extends React.Component
       </div>
     );
   }
-
-  /** tried to use both models in Start and Stop buttons */
-  start()
-  {
-    this.props.counter.start();
-  }
 }
 
 export default Clock;
