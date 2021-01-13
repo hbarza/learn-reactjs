@@ -4,7 +4,7 @@ class GuestGreeting extends React.Component
 {
     render()
     {
-        return <h1>Please Sign In!</h1>;
+        return 'Please Sign In!';
     }
 }
 

@@ -2,6 +2,8 @@ import React          from 'react';
 import Welcome        from './User/Welcome';
 import SignInButton   from './User/SignInButton';
 import SignOutButton  from './User/SingOutButton';
+import SignInWarning  from './User/SignInWarning';
+import './User/User.css';
 
 class User extends React.Component
 {
@@ -23,6 +25,7 @@ class User extends React.Component
 
       return (
         <div>
+          <SignInWarning isSignedIn={isSignedIn}/>
           <Welcome isSignedIn={isSignedIn} />
           {button}
         </div>

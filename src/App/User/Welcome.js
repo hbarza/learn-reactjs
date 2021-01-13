@@ -1,14 +1,13 @@
-import React from 'react';
+import React        from 'react';
 import UserGreeting from './UserGreeting';
-import GuestGreeting from './GuestGreeting';
-import User from './Model/User';
+import User         from './Model/User';
 
 class Welcome extends React.Component
 {
     render ()
     {
         if (!this.props.isSignedIn) {
-            return <GuestGreeting />
+            return null;
         }
 
         this.fetchUser();
