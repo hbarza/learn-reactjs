@@ -5,18 +5,9 @@ import User from './Model/User';
 
 class Welcome extends React.Component
 {
-    isSignedIn;
-
-    constructor(props)
-    {
-        super(props);
-
-        this.isSignedIn = props.isSignedIn;
-    }
-
     render ()
     {
-        if (!this.isSignedIn) {
+        if (!this.props.isSignedIn) {
             return <GuestGreeting />
         }
 
