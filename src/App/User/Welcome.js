@@ -1,7 +1,7 @@
 import React from 'react';
 import UserGreeting from './UserGreeting';
 import GuestGreeting from './GuestGreeting';
-import User from '../User';
+import User from './Model/User';
 
 class Welcome extends React.Component
 {
@@ -28,9 +28,9 @@ class Welcome extends React.Component
     {
         let user = new User();
         ({
-            name: this.firstname = 'You', 
-            family: this.lastname = 'Stranger'
-        } = user.getUser());
+            firstname: this.firstname, 
+            lastname: this.lastname
+        } = user.user);
     }
 }
 
