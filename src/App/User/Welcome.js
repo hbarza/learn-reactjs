@@ -1,25 +1,36 @@
 import React from 'react';
+import UserGreeting from './UserGreeting';
+import GuestGreeting from './GuestGreeting';
+import User from '../User';
 
 class Welcome extends React.Component
 {
+    isSignedIn;
+
     constructor(props)
     {
         super(props);
-        this.formatName = this.formatName.bind(this);
-        ({
-            name: this.firstname = 'You', 
-            family: this.lastname = 'Stranger'
-        } = this.props.user);
+
+        this.isSignedIn = props.isSignedIn;
     }
 
     render ()
     {
-        return <h1>Welcome, {this.formatName()}!</h1>
+        if (!this.isSignedIn) {
+            return <GuestGreeting />
+        }
+
+        this.fetchUser();
+        return <UserGreeting firstname={this.firstname} lastname={this.lastname}/>
     }
 
-    formatName()
+    fetchUser()
     {
-        return this.firstname + ' ' + this.lastname;
+        let user = new User();
+        ({
+            name: this.firstname = 'You', 
+            family: this.lastname = 'Stranger'
+        } = user.getUser());
     }
 }
 

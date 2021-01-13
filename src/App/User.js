@@ -16,7 +16,17 @@ class User extends React.Component
 
     render()
     {
-        return <Welcome user={this.user} />;
+      return <Welcome isSignedIn={this.getIsSignedIn()} />;
+    }
+
+    getIsSignedIn()
+    {
+      return false;
+    }
+
+    getUser()
+    {
+      return this.user;
     }
 }
 
