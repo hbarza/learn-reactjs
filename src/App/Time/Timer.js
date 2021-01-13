@@ -66,8 +66,9 @@ class Timer extends React.Component
    * so it seems using constructor binding is the safest approach to use.
    */
   // toggleTimer = () =>
-  toggleTimer()
+  toggleTimer(event)
   {
+    event.preventDefault();
     this.state.timer ? this.stop() : this.start();
   }
 
