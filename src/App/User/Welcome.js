@@ -30,7 +30,7 @@ class Welcome extends React.Component
         ({
             firstname: this.firstname, 
             lastname: this.lastname
-        } = user.user);
+        } = user.getUser());
     }
 }
 

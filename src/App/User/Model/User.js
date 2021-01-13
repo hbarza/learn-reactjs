@@ -1,19 +1,20 @@
 class User
 {
-    _user = {
+    user = {
         name: 'Omid',
         family: 'Barza'
     }
 
-    get user()
+    getUser()
     {
+        // in fact user data will fetch from server later
+        let user    = this.user;
         let userMap = {};
         
         ({
             name: userMap.firstname = 'You',
             family: userMap.lastname = 'Stranger'
-        } = this._user); 
-        // in fact user data will fetch from server later
+        } = user);
 
         return userMap;
     }
